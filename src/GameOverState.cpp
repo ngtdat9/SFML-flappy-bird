@@ -12,7 +12,6 @@ namespace Dat
 {
     GameOverState::GameOverState(GameDataRef data, int score) : _data(data), score(score)
     {
-
     }
 
     void GameOverState::Init()

@@ -10,9 +10,6 @@ namespace Dat
         this->Run();
     }
 
-    Game::~Game() {
-        // Nothing needed unless you manage raw pointers (you don't)
-    }
 
     void Game::Run()
     {
