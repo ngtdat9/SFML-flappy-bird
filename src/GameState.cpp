@@ -46,7 +46,7 @@ namespace Dat
             {
                 _data->window.close();
             }
-            if (this->_data->inputManager.IsClicked(_background, sf::Mouse::Left, this->_data->window))
+            if (_data->inputManager.IsClicked(_background, sf::Mouse::Left, _data->window))
             {
                 if (GameStates::eGameOver != _gameState)
                 {
@@ -69,7 +69,6 @@ namespace Dat
             if (clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY)
             {
             pipe->randomPipes();
-            pipe->SpawnInvisiblePipe();
             pipe->SpawnTopPipe();
             pipe->SpawnBottomPipe();
             pipe->SpawnScorePipe();

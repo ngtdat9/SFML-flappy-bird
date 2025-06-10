@@ -9,7 +9,7 @@
 
 namespace Dat {
 
-    void AssetManager::loadTexture(const std::string& name, const std::string& fileName){
+    void AssetManager::loadTexture(std::string name, std::string fileName){
         sf::FileInputStream stream;
         if (!stream.open(fileName)) {
             throw std::runtime_error("Failed to open texture file: " + fileName);

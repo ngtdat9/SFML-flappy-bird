@@ -20,7 +20,6 @@ namespace Dat{
     {
     public:
         Game(int width, int height, const std::string& title);
-        ~Game();
 
     private:
         const float dt = 1.0f / 60.0f;

@@ -5,7 +5,7 @@
 #pragma once
 
 #define SCREEN_WIDTH 650
-#define SCREEN_HEIGHT 1030
+#define SCREEN_HEIGHT 1000
 #define SPLASH_STATE_SHOW_TIME 3.0
 #define SPLASH_SCENE_BACKGROUND_FILEPATH "../assets/res/bird-splash.jpg"
 #define MAIN_MENU_BACKGROUND_FILEPATH "../assets/res/sky.png"

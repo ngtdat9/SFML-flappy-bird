@@ -15,7 +15,7 @@ namespace Dat
     void SplashState::Init()
     {
         _data->assetManager.loadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
-        _background.setTexture(this->_data->assetManager.getTexture("Splash State Background"));
+        _background.setTexture(_data->assetManager.getTexture("Splash State Background"));
         _background.setPosition(0, 0);
     }
     void SplashState::HandleInput()

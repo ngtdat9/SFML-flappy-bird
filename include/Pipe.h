@@ -11,7 +11,7 @@ namespace Dat
         Pipe(GameDataRef data);
         void SpawnTopPipe();
         void SpawnBottomPipe();
-        void SpawnInvisiblePipe();
+        // void SpawnInvisiblePipe();
         void SpawnScorePipe();
         void movePipes(float dt);
         void DrawPipes();

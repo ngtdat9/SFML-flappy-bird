@@ -2,14 +2,6 @@
 
 namespace Dat
 {
-    InputManager::InputManager() {
-        // Optional: initialization code
-    }
-
-    InputManager::~InputManager() {
-        // Optional: cleanup code
-    }
-
     bool InputManager::IsClicked(sf::Sprite obj, sf::Mouse::Button button, sf::RenderWindow& window)
     {
         if (sf::Mouse::isButtonPressed(button))
@@ -21,10 +13,5 @@ namespace Dat
             }
         }
         return false;
-    }
-
-    sf::Vector2i InputManager::GetMousePosition(sf::RenderWindow& window)
-    {
-        return sf::Mouse::getPosition(window);
     }
 }

@@ -25,13 +25,7 @@ namespace Dat
         sprite.setPosition(_data->window.getSize().x, _data->window.getSize().y - sprite.getGlobalBounds().height - pipe_y);
         pipes.push_back(sprite);
     }
-    void Pipe::SpawnInvisiblePipe()
-    {
-        sf::Sprite sprite(_data->assetManager.getTexture("Pipe Up"));
-        sprite.setPosition(_data->window.getSize().x, -pipe_y);
-        sprite.setColor(sf::Color(0,0,0,0));
-        pipes.push_back(sprite);
-    }
+
 
     void Pipe::SpawnScorePipe()
     {
@@ -76,6 +70,7 @@ namespace Dat
     }
     void Pipe::randomPipes()
     {
+        // Random vertical offset for pipes: 0 <= pipe_y <= landHeight
         pipe_y = rand() % (landHeight + 1);
     }
      std::vector<sf::Sprite> &Pipe::getSprites()
