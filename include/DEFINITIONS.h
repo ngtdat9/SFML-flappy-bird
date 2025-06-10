@@ -35,6 +35,7 @@
 #define PIPE_MOVE_SPEED 200.0f
 #define PIPE_SPAWN_FREQUENCY 1.5f
 
+//enumeration (0,1,2)
 enum GameStates
 {
     eReady, ePlaying, eGameOver
