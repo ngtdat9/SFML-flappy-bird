@@ -10,7 +10,7 @@ namespace Dat {
         ~AssetManager() = default;
 
         void loadTexture(std::string name, std::string fileName);
-        sf::Texture& getTexture(const std::string& name);
+        sf::Texture& getTexture(std::string name);
 
         void loadFont(std::string name, std::string fileName);
         sf::Font& getFont(std::string name);

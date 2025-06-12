@@ -14,6 +14,7 @@ namespace Dat{
         AssetManager assetManager;
         InputManager inputManager;
     };
+
     typedef std::shared_ptr<gameData> GameDataRef;
 
     class Game

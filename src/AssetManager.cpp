@@ -23,7 +23,7 @@ namespace Dat {
         _textures[name] = std::move(texture);
     }
 
-    sf::Texture& AssetManager::getTexture(const std::string& name){
+    sf::Texture& AssetManager::getTexture(std::string name){
         return _textures.at(name);
     }
 

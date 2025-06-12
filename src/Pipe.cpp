@@ -70,7 +70,7 @@ namespace Dat
     }
     void Pipe::randomPipes()
     {
-        // Random vertical offset for pipes: 0 <= pipe_y <= landHeight
+        // Random vertical offset for pipes: 1 <= pipe_y <= landHeight
         pipe_y = rand() % (landHeight + 1);
     }
      std::vector<sf::Sprite> &Pipe::getSprites()
